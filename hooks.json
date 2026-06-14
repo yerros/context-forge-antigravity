@@ -1,0 +1,44 @@
+{
+  "context-forge-session-load": {
+    "SessionStart": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ./hooks/scripts/load-context.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "context-forge-guard": {
+    "PreToolUse": [
+      {
+        "matcher": "write_to_file|replace_file_content|multi_replace_file_content|edit_file|create_file",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ./hooks/scripts/guard.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "context-forge-track": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ./hooks/scripts/track.sh",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
