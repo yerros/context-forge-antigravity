@@ -4,7 +4,7 @@
 # project state so the agent loads context before doing any work.
 #
 # NOTE: Antigravity natively reads AGENTS.md / GEMINI.md every session, so the
-# primary context-loading path is the AGENTS.md that `context-init` generates.
+# primary context-loading path is the AGENTS.md that `forge-init` generates.
 # This hook is a belt-and-suspenders reminder. It emits the Antigravity hook
 # response shape ({"decision":"allow", ...}); if your `agy` version surfaces a
 # different field for injected context, adjust the key below (see README).

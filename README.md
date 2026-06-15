@@ -22,7 +22,7 @@ What it gives the agent:
 | Plugin-root variable | `${CLAUDE_PLUGIN_ROOT}` | relative `./hooks/scripts/…` |
 | `marketplace.json` | present | dropped (Antigravity installs from git/path) |
 
-The skill markdown is agent-agnostic and was not modified. Because Antigravity reads `AGENTS.md`/`GEMINI.md` natively every session, `context-init`'s `AGENTS.md` output is the primary context-loading path; the SessionStart hook is a backup reminder.
+The skill markdown is agent-agnostic and was not modified. Because Antigravity reads `AGENTS.md`/`GEMINI.md` natively every session, `forge-init`'s `AGENTS.md` output is the primary context-loading path; the SessionStart hook is a backup reminder.
 
 ## Install
 

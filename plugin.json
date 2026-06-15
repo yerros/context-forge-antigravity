@@ -1,6 +1,6 @@
 {
   "name": "context-forge",
-  "version": "0.8.0-antigravity.1",
+  "version": "0.9.0-antigravity.1",
   "description": "Set up and maintain the Six-File Context Methodology in any project (any stack) — initialize context files, refine prompts, plan and add features, run the build/verify/debug/PR loop, log architecture decisions, audit for drift, and resume work. Antigravity CLI build: skills auto-discovered from skills/, plus deterministic, token-free hooks that load context, record activity, and guard generated/protected files.",
   "author": {
     "name": "yerros",
